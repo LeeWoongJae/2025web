@@ -9,7 +9,13 @@
     #userValue{
       color:red;
     }
-
+    .alert-box{
+      background: skyblue;
+      padding : 20px;
+      color : white;
+      border-radius: 5px;
+      display: none;
+    }
 
   </style>
 </head>
@@ -24,7 +30,16 @@
     <input type="text" id="result">
     </p>
   </div>
-  <script src="js/condition1.js"></script>
+  <div class="alert-box" id="alertBox">
+     알림창
+  </div>
+  <button onclick="document.querySelector('#alertBox').style.display='block';">버튼</button>
+
+
+
+
+
+  <script src="js/condition2.js"></script>
 
 </body>
 
