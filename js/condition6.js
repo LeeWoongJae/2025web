@@ -15,10 +15,16 @@ console.log("\t\t\t\t1번숙제 절취선\n-------------------------------------
 let a = 0; b=0;
 // a = prompt("첫번째 수를 입력하세요 (최대 100)");
 // b = prompt("두번째 수를 입력하세요 (최대 100)");
+let item = prompt("두 수를 입력하세요 (단 입력시 스페이스 구분하여 입력 ex> 1 2)");
+let items = item.split(' ');
+let item1 = parseInt(items[0]);
+let item2 = parseInt(items[1]);
+console.log(item1 , item2 , typeof item1);
+// let item2 = parseInt(item[1]);
 // console.log(a,b);
-if (a > b){
+if (a > b){ // item1 > item2
     console.log("1번 숙제 >> 입력하신 두 수중에 큰 값은 "+ a + " 입니다");
-}else if(a < b){
+}else if(a < b){// item1 < item2
     console.log("1번 숙제 >> 입력하신 두 수중에 큰 값은 "+ b + " 입니다");
 }else{
     console.log("1번 숙제 >> 두 수의 값이 서로 같습니다");
@@ -69,3 +75,4 @@ for(let i=1 ;i<=10;i++ ){
   }
 }
 console.log("---------------------------------------------------");
+//  switch ~ case 문 으로도 조건 걸어서 가능
