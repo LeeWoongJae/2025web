@@ -17,9 +17,9 @@ let a = 0; b=0;
 // b = prompt("두번째 수를 입력하세요 (최대 100)");
 let item = prompt("두 수를 입력하세요 (단 입력시 스페이스 구분하여 입력 ex> 1 2)");
 let items = item.split(' ');
-let item1 = parseInt(items[0]);
-let item2 = parseInt(items[1]);
-console.log(item1 , item2 , typeof item1);
+a = parseInt(items[0]);
+b = parseInt(items[1]);
+console.log(a , b , typeof a);
 // let item2 = parseInt(item[1]);
 // console.log(a,b);
 if (a > b){ // item1 > item2
