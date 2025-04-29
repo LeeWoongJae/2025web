@@ -56,8 +56,6 @@ document.querySelector('select#selectGen').addEventListener('change' , function(
   document.querySelector('table.table>tbody').innerHTML = elist;
 });
 
-
-
 console.dir(document.querySelector('button.btn-danger').parentElement.parentElement);
 function delTr(param){
   document.querySelector('button.btn-danger')//
