@@ -18,7 +18,8 @@ let elist = "<table class='table'><thead><tr>";
 for(let field of fields){
   elist += `<th>${field}</th>`;
 }
-elist+="</thead><tbody>";
+
+elist+="</tr></thead><tbody>";
 for (let emp of data) {
   // console.log(emp);
   elist += makeTr(emp);
@@ -57,13 +58,13 @@ document.querySelector('select#selectGen').addEventListener('change' , function(
 
 
 
-
-
-
-
-// function delTr(emp = {}){
-
-// }
+console.dir(document.querySelector('button.btn-danger').parentElement.parentElement);
+function delTr(param){
+  document.querySelector('button.btn-danger')//
+          .addEventListener('click' , function(){
+           param.target.parentElement.parentElement.remove();
+          });
+}
 
 function makeTr(emp={}){ // tr 생성 함수
   let str = "<tr>";
