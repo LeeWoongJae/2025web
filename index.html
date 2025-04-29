@@ -9,35 +9,10 @@
     #userValue {
       color: red;
     }
-
-    /* .alert-box {
-      background: skyblue;
-      padding: 20px;
-      color: white;
-      border-radius: 5px;
-      display: none;
-     } */
-     /*
-     section p{
+    select{
+      width:200px;
       text-align: center;
-      border-bottom: 1px solid green;
-    } */
-    /* .gugudan{
-      border : 1px solid #ccc;
-      
-      float:left;
-      margin-left: 5px;
-      padding : 3px;
     }
-    table{
-      clear: both;
-    }
-    #tDiv{
-      width: 80%;
-      padding:0;
-      margin:10px;
-    } */
-
   </style>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
 </head>
@@ -45,21 +20,28 @@
 <body>
   <!-- HTML 주석-->
   <div id="show">
-    <input type="text" id="userValue" value="Value값 확인">
-    <p>
+    <label>성별</label>
+    <input type="text" id="userGender">
+    <button class="btn btn-primary">검색</button>
+    <select name="selectGender" id="selectGen">
+      <option value="All">전체</option>
+      <option value="Male">남자</option>
+      <option value="Female">여자</option>
+    </select>
+    <!-- <p>
       <input type="text" id="num1" value="30">
       <input type="text" id="num2" value="20">
       <input type="text" id="result" value="">
 
       <input type="text" id="result">
-    </p>
+    </p> -->
   </div>
-  <!-- <div class="alert-box" id="alertBox">알림창</div> -->
-  <!-- <button onclick="document.querySelector('#alertBox').style.display='block';">버튼</button> -->
+
 
   
 
-  <script src="js/func3exe.js"></script>
+  <script src="js/jsonData.js"></script>
+  <script src="js/func8.js"></script>
 </body>
 
 

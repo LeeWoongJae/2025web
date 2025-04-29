@@ -1,3 +1,4 @@
+window.onload;
 // function 3exe
 // 1. 함수이름은 max(10 ,7) => "두수 중에서 큰값은 10입니다"
 // 2. sumUpTo(5) => "1ㅂ부터 5까지 합은 15입니다"
@@ -42,7 +43,7 @@ function diff(x, y) { // 3. diff(34, 17) => "두수의 차이는 17입니다"
   let result = 0;
   result = Math.abs(x - y);
   console.log(`두수의 차이는 ${result} 입니다`);
-  document.write(`<p>두수의 차이는 ${result} 입니다</p>`);
+  document.write(`<p>두 수의 차이는 ${result} 입니다</p>`);
 }
 diff(34, 17);
 // end of function
