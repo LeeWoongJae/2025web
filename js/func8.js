@@ -7,7 +7,7 @@ console.log(data);
 console.clear();
 
 
-// 버튼 삭제 templete
+// 버튼 삭제 templete 
 let btnTemplete = "<button class='btn btn-danger' onclick='delTr(event)'>삭제</button>";
 
 // 속성 
@@ -44,6 +44,7 @@ document.querySelector('button.btn-primary')//
           });
 // select 안의 값이 input
 document.querySelector('select#selectGen').addEventListener('change' , function(){
+  console.log(this);
   let selectGen = document.querySelector('#selectGen').value;
   // console.log(document.querySelector('#selectGen').value);
   elist = "";
