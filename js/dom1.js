@@ -56,14 +56,21 @@ function createLi(fruitName, fruitPrice) {
   // delBtn.setAttribute('class', 'btn btn-danger'); // setAttribute 로 클래스및 속성을 추가할수있고
   delBtn.className = "btn btn-primary"; // .className 으로도 추가 가능
 
-
+  
+  li.addEventListener('mouseover' , function(){
+    li.style.backgroundColor="blue";
+  });
+  li.addEventListener('mouseout' , function(){
+    li.style.backgroundColor="green";
+  });
+  
 
   delBtn.addEventListener('click', function () {
     delBtn.parentElement.remove();
   });
 
   li.appendChild(span1);
-  span1.appendChild(txt);
+  li.appendChild(txt);
   li.appendChild(span2);
   li.appendChild(delBtn);
 
