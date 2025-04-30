@@ -3,6 +3,8 @@
 
 // Event
 document.querySelector('#addBtn').addEventListener('click', addCallBack);
+// funcName () vs funcName  : addEventListener '()' 를 추가하면 호출상관없이 페이지 로딩하면서 동시에 실행,
+//                           '()' 를 추가 안하면 eventListener로 정의된 event를 실행하면 그때 순차진행
 // console.log(addCallBack);
 // console.log(document.querySelectorAll('ul button'));
 document.querySelectorAll('ul button').forEach(function (item) {
@@ -17,8 +19,8 @@ document.querySelectorAll('li').forEach((item) => {
   item.addEventListener('mouseover', function () {
     item.style.backgroundColor = "cyan";
   });
-  item.addEventListener('mouseout' , function(){
-      item.style.backgroundColor = "";
+  item.addEventListener('mouseout', function () {
+    item.style.backgroundColor = "";
   });
 });
 
@@ -51,14 +53,13 @@ function createLi(fruitName, fruitPrice) {
   let txt = document.createTextNode(" ");
   let delBtn = document.createElement('button');
   delBtn.innerText = "삭제";
-  delBtn.setAttribute('class', 'btn btn-danger'); // setAttribute 로 클래스및 속성을 추가할수있고
+  // delBtn.setAttribute('class', 'btn btn-danger'); // setAttribute 로 클래스및 속성을 추가할수있고
   delBtn.className = "btn btn-primary"; // .className 으로도 추가 가능
 
 
 
   delBtn.addEventListener('click', function () {
     delBtn.parentElement.remove();
-
   });
 
   li.appendChild(span1);
